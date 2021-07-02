@@ -13,7 +13,7 @@ public class QuickSorterTest {
     public void should_return_sorted_array_using_quick_sort() throws Exception {
         QuickSorter quickSorter = new QuickSorter();
         Integer[] originArray = {3, 5, 8, 1, 22, 37, 11};
-        Integer[] result = quickSorter.quickSort(originArray);
+        Integer[] result = quickSorter.quickSort(originArray, 0, originArray.length - 1);
 
         Integer[] expectedArray = {1, 3, 5, 8, 11, 22, 37};
         Assertions.assertArrayEquals(result, expectedArray);
